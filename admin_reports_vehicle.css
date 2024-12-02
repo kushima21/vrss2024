@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+}
+.topbar{
+    position: fixed;
+    background: #fff;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.08);
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 2fr 10fr 0.4fr 1fr;
+    align-items: center;
+    z-index: 1;
+}
+.logo h2{
+    color: maroon;
+}
+
+.search{
+    position: relative;
+    width: 60%;
+    justify-self: center;
+}
+.search input{
+    width: 100%;
+    height: 40px;
+    padding: 0 40px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background: #f5f5f5;
+}
+.search i{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+.user{
+    position: relative;
+    height: 50px;
+    width: 50px;
+}
+.user img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.key{
+    text-align: center;
+    display: flex;
+
+}
+.key img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 30%;
+    transition: all 0.5s ease;
+
+}
+
+/*------sidebar-------*/
+.sidebar{
+    position: absolute;
+    top: 60px;
+    width: 100px;
+    height: calc(100% - 60px);
+    background: rgb(70, 2, 2);
+    overflow: hidden;
+    transition: width 0.5s linear;
+}
+.sidebar ul {
+    margin-top: 30px;
+}
+.sidebar ul li{
+    position: relative;
+    width: 90px;
+}
+
+.sidebar ul li a {
+    position: relative;
+    font-size: 15px;
+    width: 300px;
+    text-decoration: none;
+    color: #fff;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding:20px;
+    margin-top: 1em;
+}
+
+.sidebar ul li a:hover{
+    background:#fff;
+    color: #000000;
+    border-radius: 30px;
+    padding: 5px;
+    transition: all 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+}
+
+.sidebar:hover{
+    width: 260px;
+    transition: all 0.5s ease;
+}
+.sidebar ul li a i {
+    position: relative;
+    width: 70px;
+    height: auto;
+    top: 14px;
+    font-size: 25px;
+    text-align: center;
+}
+.nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+.bottom-content{
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+/*-------main------*/
+
+.main{
+    position: absolute;
+    top: 60px;
+    width: calc(100% - 260px);
+    left: 260px;
+    min-height: calc(100vh - 60px);
+    overflow: scroll;
+
+}
+.cards{
+    width: 100%;
+    padding: 35px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.cards .card{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px 0 rgba(0, 0, 0, 0.08);
+}
+.cards .card:hover{
+   background: maroon;
+}
+
+.cards .card:hover .number{
+    color: #fff;
+ }
+
+ .cards .card:hover .icon-box i{
+    color: #fff;
+ }
+
+.number{
+    font-size: 35px;
+    font-weight: 800;
+    color: maroon;
+}
+.card-name{
+    color: #888;
+    font-weight: 600;
+}
+.icon-box i{
+    font-size: 25px;
+}
+/* admin--reports--main--container */ 
+.admin--reports--main--container {
+    width: auto;
+    height: auto;
+    padding-top: 65px;
+    padding-left: 110px;
+    display: flex;
+}
+
+.admin--reports--container--box {
+    width: 1700px;
+    height: 770px;
+    box-shadow: 1px 4px 41px rgba(0,0,0,0.1);
+}
+
+/*reports--headers */
+.admin--reports--header {
+    width: 1450px;
+    height: 60px;
+    box-shadow: 1px 4px 41px rgba(0,0,0,0.1);
+    display: flex;
+}
+
+.reports--headers {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.reports--headers h2 {
+    font-size: 28px;
+    font-weight: 450;
+    color: rgb(99, 6, 6);
+}
+
+.reports--header--url {
+    padding-left: 400px;
+    padding-top: 10px;
+    display: flex;
+}
+.reports--header--url a {
+    margin-left: 150px;
+    padding-top: 10px;
+}
+.reports--header--url i {
+    font-size: 25px;
+    font-weight: 800;
+    gap: 150px;
+    color: rgb(80, 1, 1);
+}
+
+.reports--header--url {
+    padding-left: 400px;
+    padding-top: 10px;
+    display: flex;
+}
+
+.reports--header--url a {
+    margin-left: 150px;
+    padding-top: 10px;
+    text-decoration: none; /* Optional: To remove underline from links */
+}
+
+.reports--header--url i {
+    font-size: 25px;
+    font-weight: 800;
+    gap: 150px;
+    color: rgb(99, 6, 6);
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition effect */
+}
+
+/* Hover effect for links */
+.reports--header--url a:hover i {
+    color: rgb(200, 0, 0); /* Change icon color on hover */
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
+}
+
+/* Optional: Add hover effect for the entire link area */
+.reports--header--url a:hover {
+    text-decoration: underline; /* Underline the link on hover */
+}
+
+/*admin--reports--graph--container*/
+.admin--reports--graph--container {
+    width: 1450px;
+    height: 320px;
+    box-shadow: 1px 4px 1px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.admin--reports--graph--container {
+    width: 1450px;
+    height: 300px;
+    box-shadow: 1px 4px 1px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+}
+/* Admin Vehicle Reports Reservation */
+.admin--vehicle--reports--reservation {
+    width: 1450px;
+    height: 300px;
+    box-shadow: 1px 4px 1px rgba(0, 0, 0, 0.1);
+    overflow: auto; /* Allow scrolling if content exceeds the container size */
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* Custom Scrollbar Styling */
+.admin--vehicle--reports--reservation::-webkit-scrollbar {
+    width: 10px; /* Width of the vertical scrollbar */
+    height: 10px; /* Height of the horizontal scrollbar */
+}
+
+.admin--vehicle--reports--reservation::-webkit-scrollbar-thumb {
+    background: rgba(99, 6, 6, 0.7); /* Scrollbar thumb color */
+    border-radius: 5px; /* Rounded edges for the scrollbar thumb */
+}
+
+.admin--vehicle--reports--reservation::-webkit-scrollbar-thumb:hover {
+    background: rgba(99, 6, 6, 1); /* Darker color on hover */
+}
+
+.admin--vehicle--reports--reservation::-webkit-scrollbar-track {
+    background: #f4f4f4; /* Scrollbar track background */
+    border-radius: 5px; /* Rounded edges for the scrollbar track */
+}
+
+.reservation-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+.reservation-table th,
+.reservation-table td {
+    border: 1px solid #1b0101;
+    padding: 8px;
+}
+
+.reservation-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #333;
+}
+
+.reservation-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.reservation-table tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+
+/* admin--filtering--container */
+.admin--filtering--container {
+    width: 300px;
+    height: 770px;
+    box-shadow: 1px 4px 1px rgba(0,0,0,0.1);
+}
+
+

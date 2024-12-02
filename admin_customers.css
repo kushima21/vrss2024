@@ -1,0 +1,54 @@
+.admin--customers--main--container {
+    width: auto;
+    height: auto;
+    padding-top: 70px;
+    padding-left: 120px;
+}
+
+.admin--customers--main--box {
+    width: 1650px;
+    height: 750px;
+    box-shadow: 1px 1px 1px 1px rgba(5, 15, 1, 0.9);
+}
+.admin--customers--header--box h1{
+    padding-left: 20px;
+    font-size: 35px;
+    font-weight: 500;
+}
+.admin--customers--header--box  {
+    display: flex;
+}
+.admin--customers--header--box ul {
+    display: flex;
+    gap: 300px;
+    padding-left: 200px;
+    padding-top: 20px;
+}
+.admin--customers--header--box li {
+    list-style: none;
+    color: black;
+}
+
+/* admin--main--customers--container--box */
+.admin--main--customers--container--box {
+    width: 1600px;
+    height: 650px;
+    box-shadow: 1px 1px 1px 1px rgba(5, 15, 1, 0.9);
+    margin-top: 20px;
+    margin-left: 20px;
+    overflow: scroll;
+    padding-left: 200px;
+}
+
+.admin--customers--form--containers {
+    width: 1200px;
+    height: 250px;
+    box-shadow: 1px 1px 1px 1px rgba(5, 15, 1, 0.9);
+    margin-top: 40px;
+    border-radius: 20px;
+    display: flex;
+}
+.admin--customers--image--box img {
+    width: 250px;
+    height: 250px;
+}

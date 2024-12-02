@@ -1,0 +1,195 @@
+    .admin--main--vehicle--container {
+        width: auto;
+        height: auto;
+        padding-top: 80px;
+        padding-left: 100px;
+    }
+    .admin--main--vehicles--box {
+        max-width: 1720px;
+        height: 760px;
+        box-shadow: 1px 8px 10px rgba(2, 2, 2, 0.9);
+    }
+
+    /* close */
+    .admin--vehicles--header--back--box {
+        max-width: 1720px;
+        height: 100px;
+        display: flex;
+    }
+
+    /* admin baack box */
+    .admin--vehicles--header--back {
+        width: 500px;
+        height: 100px;
+    }
+
+    .admin--vehicles--header--back i {
+        padding-top: 10px;
+        padding-left: 20px;
+        color: rgb(87, 2, 2);
+        font-size: 20px;
+    }
+    .admin--vehicles--header--back  span {
+        font-weight: 400;
+    }
+    .admin--vehicles--header--back  h1 {
+        font-weight: 500;
+        padding-left: 80px;
+    }
+    /* admin url css */
+    .admin--vehicles--header--url {
+        width: 1220px;
+        height: 100px;
+        display: flex;
+        justify-content: right;
+    }
+    .admin--url--button--container {
+        padding-top: 30px;
+    }
+    .admin--url--button--container ul{
+        padding-right: 100px;
+        display: flex;
+        gap: 100px;
+    }
+    .admin--url--button--container li {
+        list-style: none;
+    }
+    .admin--url--button--container button {
+        width: 200px;
+        height: 50px;
+        font-size: 15px;
+        border-radius: 10rem;
+    }
+    /* close */
+
+    /* admin vehicles fomr details */
+    .admin--vehcicles--details--form--box {
+        width: 1720px;
+        height: 660px;
+        box-shadow: 1px 8px 10px rgba(2, 2, 2, 0.9);
+        overflow: scroll;
+        padding-left: 250px;
+    }
+
+    .vehicles--box--container {
+        width: 1200px;
+        height: 280px;
+        box-shadow: 1px 8px 10px rgba(2, 2, 2, 0.9);
+        display: flex;
+        margin-top: 25px;
+    border-radius: 10px;
+    }
+    .vehicle--image {
+        padding-top: 25px;
+        padding-left: 20px;
+    }
+    .vehicle--image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .vehicles--details--form {
+        padding-top: 10px;
+        padding-left: 20px;
+        margin: 20px;
+    }
+    .vehicles--details--form h1 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .drivers--details {
+        padding-top: 10px;
+        padding-left: 100px;
+        margin: 30px
+    }
+    .drivers--details h1 {
+        font-size: 20px;
+        font-weight: 400
+    }
+
+    /* close */
+    .container--for--button {
+        padding-top: 80px;
+        padding-left: 50px;
+    }
+    .view--button {
+        padding-left: 100px;
+    }
+    .view--button button {
+        width: 220px;
+        height: 50px;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+    .edit--or--delete--container {
+        padding-top: 50px;
+        padding-left: 100px;
+    }
+
+    .edit--or--delete--container button {
+        width: 100px;
+        height: 40px;
+        font-size: 15px;
+        border-radius: 20px;
+    }
+
+    .status {
+        padding-top: 80px;
+        padding-left: 50px;
+    }
+    .status p{
+        font-size: 18px;
+        color: red;
+    }
+
+    .admin--vehicles--header--back h1 {
+        padding-top: 22px;
+    }
+
+    .edit--or--delete--container button {
+        width: 120px;
+        height: 40px;
+        font-size: 15px;
+        cursor: pointer;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 1px 8px 10px  rgba(0, 0, 0, 0.5);
+        padding-inline: 20px;
+        border: 2px solid #fff;
+        font-weight: 600;
+        color: maroon;
+        margin: 5px;
+    }
+
+    .view--button button {
+        width: max-content;
+        height: 40px;
+        font-size: 15px;
+        cursor: pointer;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 1px 8px 10px  rgba(0, 0, 0, 0.5);
+        padding-inline: 20px;
+        border: 2px solid #fff;
+        font-weight: 600;
+        color: maroon;
+        margin: 5px;
+    }
+
+    .admin--url--button--container button {
+        width: 250px;
+        height: 50px;
+        border-radius: 10rem;
+        background: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 1px 8px 10px  rgba(0, 0, 0, 0.5);
+        padding-inline: 35px;
+        border: 2px solid #fff;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        color: maroon;
+    }
+    

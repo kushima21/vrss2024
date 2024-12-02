@@ -1,0 +1,95 @@
+.setting--rental--container {
+    width: auto;
+    height: auto;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+    padding-top: 80px;
+    padding-left: 110px;
+}
+.setting--rental--border--container {
+    width: 1680px;
+    height: 750px;
+    box-shadow: 1px 1px 1px 1px rgba(5, 15, 1, 0.9);
+}
+
+/* rental header */
+.setting--rental--border--header {
+    width: 1680px;
+    height: 80px;
+}
+.setting--rental--border--header  h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 30px;
+}
+/* cloase */
+.setting--rental--form--container {
+    width: 1500px;
+    height: 600px;
+    margin-left: 100px;
+    margin-top: 30px;
+    overflow: scroll;
+    padding-top: 50px;
+}
+.setting--rental--form--container--border {
+    width: 1300px;
+    height: 270px;
+    box-shadow: 1px 1px 1px 1px rgba(5, 15, 1, 0.9);
+    margin-left: 85px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.setting--rental--reservation--form--container {
+    display: flex;
+}
+.setting--rental--vehicle--image img{
+    width: 200px;
+    height: 200px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.setting--rental--reservation--vehicles--details {
+    padding-left: 40px;
+    padding-top: 20px;
+}
+.setting--rental--reservation--vehicles--details p {
+    margin: 10px;
+}
+.setting--rental--reservation--customers--details {
+    padding-left: 50px;
+    padding-top: 20px;
+}
+.setting--rental--reservation--customers--details p {
+    margin: 5px;
+    font-size: 15px;
+}
+.setting--rental--reservation--payment--details {
+    padding-top: 20px;
+    padding-left: 80px;
+}
+.setting--rental--reservation--payment--details p {
+    margin: 30px;
+}
+/* button */
+.setting--rental--reservation--button--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.setting--rental--reservation--form--button  {
+   gap: 80px;
+   display: flex;
+}
+.setting--rental--reservation--form--button button {
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-right: 15px;
+    border-radius: 10px;
+    font-weight: 400;
+    background-color: rgb(131, 3, 3);
+    color: white;
+    border: none;
+}

@@ -1,0 +1,157 @@
+.admin--vehicles--main--container {
+    width: auto;
+    height: auto;
+    padding-top: 65px;
+    padding-left: 100px;
+}
+
+.admin--vehicle--main--container--box {
+    width: 100%;
+    height: 770px;
+}
+
+.admin--vehicles--header--container {
+    width: 95%;
+    height: 90px;
+    display: flex;
+}
+
+.admin--vehicles--header--container h2 {
+    padding-left: 40px;
+    padding-top: 20px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.admin--search--vehicle--container {
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+}
+
+.admin--search--vehicle--container i {
+    font-size: 28px;
+    padding-right: 10px;
+}
+
+.admin--search--vehicle--container input {
+    width: 500px;
+    height: 50px;
+    border-radius: 1rem;
+}
+.admin--search--vehicle--container input::placeholder {
+    padding-left: 10px;
+}
+
+.admin--search--vehicle--container button {
+    width: 150px;
+    height: 50px;
+    border-radius: 40px;
+    background: linear-gradient(black, maroon);
+    border: none;
+    color: white;
+    font-size: 1em;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.admin--icon--container {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding-left: 100px;
+}
+
+.admin--icon--container a {
+    color: darkred;
+}
+.admin--icon--container  i {
+    font-size: 25px;
+}
+
+/* vehicles--main--container */
+.vehicles--main--container {
+    width: 1630px;
+    height: 620px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    padding-top: 20px;
+    margin-left: 50px;
+    overflow: hidden; /* Ensure calendar doesn't overflow container */
+}
+
+#calendar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-left: 115px;
+}
+
+/* Base styling for the hover div */
+#reservedHover {
+    background-color: #f9f9f9;  /* Light background for readability */
+    border: 1px solid #ccc;     /* Subtle border for distinction */
+    border-radius: 8px;         /* Rounded corners for a modern look */
+    padding: 15px;              /* Increased padding for more space */
+    box-shadow: 0 4px 8px rgba(22, 0, 0, 0.1); /* Shadow for depth */
+    position: absolute;         /* Positioned dynamically via JS */
+    display: none;              /* Initially hidden */
+    z-index: 1000;              /* Ensure it stays on top */
+    max-width: 100%;           /* Adjust width as needed */
+    font-family: Arial, sans-serif; /* Clean font for readability */
+    font-size: 14px;            /* Standard font size */
+    color: #333;                /* Text color */
+    width: 400px;
+    height: auto;               /* Height adjusts based on content */
+    text-align: left;           /* Text alignment */
+    line-height: 1.5;           /* Adjust line height for readability */
+}
+
+/* Styling for the image inside the hover div */
+#reservedHover img {
+
+    margin: 10px auto;         /* Center the image */
+    max-width: 100%;            /* Reduce width to 70% of the hover div */
+    height: auto;              /* Maintain aspect ratio */
+    border-radius: 4px;        /* Optional rounded corners for the image */
+    display: flex;
+    align-items: center;
+
+}
+
+/* Styling for the title in the hover div */
+#reservedHover strong {
+    font-size: 16px;            /* Larger text for emphasis */
+    color: #000;                /* Darker for contrast */
+    display: block;             /* Block element for proper spacing */
+    margin-bottom: 8px;         /* Space below the title */
+    text-align: center;         /* Center align the title */
+}
+
+/* Styling for the description text */
+#reservedHover p {
+    margin: 10px 0;             /* Spacing around text */
+    font-size: 14px;            /* Adjust text size for readability */
+}
+
+/* Optional: Style the rent price and date section */
+#reservedHover .rent-details {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Optional media query for smaller screens */
+@media (max-width: 600px) {
+    #reservedHover {
+        width: 90%;            /* Make the hover box more compact on smaller screens */
+        font-size: 12px;       /* Adjust text size */
+    }
+
+    #reservedHover img {
+        max-width: 80%;       /* Adjust image size for small screens */
+        height: auto;
+    }
+}

@@ -1,0 +1,135 @@
+.admin--main--security--container {
+    width: auto;
+    height: auto;
+    padding-top: 70px;
+    padding-left: 120px;
+}
+
+.admin--security--container--box {
+    width: 1680px;
+    height: 700px;
+    box-shadow: 1px 8px 10px rgba(2, 1, 1, 0.9);
+}
+
+.admin--security--header--box {
+    width: 1680px;
+    height: 70px;
+    box-shadow: 1px 8px 10px rgba(2, 1, 1, 0.9);
+}
+
+.admin--security--header--box h1 {
+    font-size: 30px;
+    font-weight: 450;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+/* admin--security--container--box--details */
+.admin--security--container--box--details {
+    width: 1680px;
+    height: 630px;
+    box-shadow: 1px 8px 10px rgba(2, 1, 1, 0.9);
+    padding-top: 30px;
+    padding-left: 220px;
+}
+
+/* admin--security--box--form--details */
+.admin--security--box--form--details {
+    width: 1200px;
+    height: 550px;
+    box-shadow: 1px 8px 10px rgba(2, 1, 1, 0.9);
+    padding-top: 80px;
+    padding-left: 300px;
+}
+
+/* admin--form--box */
+.admin--form--box {
+    width: 500px;
+    height: 70px;
+    border-radius: 40px;
+    box-shadow: 1px 8px 10px rgba(2, 1, 1, 0.9);
+    text-align: center;
+}
+.admin--form--box p {
+    padding-top: 15px;
+    font-size: 25px;
+}
+/* admin--form--email */
+.admin--form--email {
+    padding-bottom: 50px;
+}
+
+/* admin--security--button--container */
+.admin--security--button--container {
+    padding-top: 50px;
+}
+
+.admin--security--button--container button {
+    width: 200px;
+    height: 50px;
+    margin-left: 30px;
+    border-radius: 30px;
+}
+
+/* admin--form--password */
+
+.security--container--box {
+    width: 50%;
+    height: 400px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    font-size: 14px;
+    padding-left: 20px;
+    margin-left: 30%;
+  }
+  .user--security--main--container--box span{
+    margin-left: 35%;
+    font-size: 15px;
+    color: maroon;
+    font-weight: 600;
+  }
+  .user--security--container {
+    padding-left: 50px;
+    margin-top: 10%;
+
+ }
+ 
+
+ .box{
+    margin-left: 25%;
+     width: 300px;
+     height: 50px;
+     box-shadow: 1px 1px 4px 4px rgba(17, 1, 1, 0.1); /* Subtle shadow */
+     text-align: center;
+     justify-content: center;
+ }
+ .box p{
+     padding: 10px;
+ }
+ .button--edit--container {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap to the next line on smaller screens */
+    gap: 20px; /* Maintain spacing between buttons */
+    justify-content: center; /* Center the buttons within the container */
+}
+
+.button--edit--container button {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 8px 10px  rgba(0, 0, 0, 0.5);
+    width: 250px;
+    padding-inline: 35px;
+    border: 2px solid #fff;
+    font-size: 15px;
+    font-weight: 600;
+    color: maroon;
+    margin: 20px;
+}
+.button--edit--container button:hover{
+    background: maroon;
+    color: #fff;
+    transition: all 0.5S ease;
+    cursor: pointer;
+}

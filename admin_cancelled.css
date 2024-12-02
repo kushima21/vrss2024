@@ -1,0 +1,139 @@
+.admin--monitoring--container {
+    width: auto;
+    height: auto;
+    padding-top: 70px;
+    padding-left: 120px;
+}
+.admin--monitoring--container--box {
+    width: 1650px;
+    height: 750px;
+    box-shadow: 1px 1px 1px 1px rgba(5, 15, 1, 0.9);
+}
+/* header */
+.admin--monitoring--header h1 {
+    padding-left: 20px;
+    font-size: 35px;
+    font-weight: 500;
+}
+/* close */
+
+.admin--customers--monitoring--container {
+    width: 1600px;
+    height: 650px;
+    box-shadow: 1px 1px 1px 1px rgba(5, 15, 1, 0.9);
+    margin-top: 20px;
+    margin-left: 20px;
+    overflow: scroll;
+    padding-left: 200px;
+}
+.admin--customers--monitoring--box {
+    width: 1200px;
+    height: 250px;
+    box-shadow: 1px 1px 1px 1px rgba(5, 15, 1, 0.9);
+    margin-top: 40px;
+    border-radius: 20px;
+    display: flex;
+}
+/* image design */
+.admin--customers--image--box img {
+    width: 250px;
+    height: 250px;
+}
+/* vehicele form */
+.admin--vehicle--form--container {
+    padding-left: 30px;
+    padding-top: 15px;
+}
+.admin--vehicle--form--container h1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+.admin--customers--form {
+    padding-left: 60px;
+    padding-top: 15px;
+}
+.admin--customers--form h1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+.admin--reservation--details {
+    padding-left: 50px;
+    padding-top: 15px;
+}
+.admin--reservation--details h1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+.admin--additional--details {
+    padding-left: 80px;
+    padding-top: 10px;
+}
+.admin--additional--details h1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.status {
+    padding-top: 10px;
+}
+.status h1 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.status p {
+    font-size: 18px;
+    color: rgb(109, 2, 2);
+}
+.payment {
+    padding-top: 10px;
+}
+.payment h1 {
+    font-size: 18px;
+    color: rgb(185, 1, 1);
+    font-weight: 400;
+}
+.payment p {
+    font-size: 20px;
+    color: red;
+    padding-top: 0px;
+}
+/* other chooses */
+.admin--monitoring--header {
+    display: flex;
+}
+.admin--monitoring--chooses {
+    margin-top: 20px;
+}
+.admin--monitoring--chooses ul{
+    display: flex;
+    padding-left: 150px;
+    gap: 180px;
+}
+.admin--monitoring--chooses li {
+    list-style: none;
+}
+.admin--monitoring--chooses a {
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+}
+.setting--rental--reservation--form--button {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.setting--rental--reservation--form--button button {
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+}
+.admin--view--reservation--cancel--button {
+    padding-top: 100px;
+    padding-left: 50px;
+}
+.admin--view--reservation--cancel--button button {
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: 500;
+}

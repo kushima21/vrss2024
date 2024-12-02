@@ -1,0 +1,698 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+}
+.topbar{
+    position: fixed;
+    background: #fff;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.08);
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 2fr 10fr 0.4fr 1fr;
+    align-items: center;
+    z-index: 1;
+}
+.logo h2{
+    color: maroon;
+}
+
+.search{
+    position: relative;
+    width: 60%;
+    justify-self: center;
+}
+.search input{
+    width: 100%;
+    height: 40px;
+    padding: 0 40px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background: #f5f5f5;
+}
+.search i{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+.user{
+    position: relative;
+    height: 50px;
+    width: 50px;
+}
+.user img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.key{
+    text-align: center;
+    display: flex;
+
+}
+.key img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 30%;
+    transition: all 0.5s ease;
+
+}
+
+/*------sidebar-------*/
+.sidebar{
+    position: absolute;
+    top: 60px;
+    width: 100px;
+    height: calc(100% - 60px);
+    background: rgb(70, 2, 2);
+    overflow: hidden;
+    transition: width 0.5s linear;
+}
+.sidebar ul {
+    margin-top: 30px;
+}
+.sidebar ul li{
+    position: relative;
+    width: 90px;
+}
+
+.sidebar ul li a {
+    position: relative;
+    font-size: 15px;
+    width: 300px;
+    text-decoration: none;
+    color: #fff;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding:20px;
+    margin-top: 1em;
+}
+
+.sidebar ul li a:hover{
+    background:#fff;
+    color: #000000;
+    border-radius: 30px;
+    padding: 5px;
+    transition: all 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+}
+
+.sidebar:hover{
+    width: 260px;
+    transition: all 0.5s ease;
+}
+.sidebar ul li a i {
+    position: relative;
+    width: 70px;
+    height: auto;
+    top: 14px;
+    font-size: 25px;
+    text-align: center;
+}
+.nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+.bottom-content{
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+/*-------main------*/
+
+.main{
+    position: absolute;
+    top: 60px;
+    width: calc(100% - 260px);
+    left: 260px;
+    min-height: calc(100vh - 60px);
+    overflow: scroll;
+
+}
+.cards{
+    width: 100%;
+    padding: 35px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.cards .card{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px 0 rgba(0, 0, 0, 0.08);
+}
+.cards .card:hover{
+   background: maroon;
+}
+
+.cards .card:hover .number{
+    color: #fff;
+ }
+
+ .cards .card:hover .icon-box i{
+    color: #fff;
+ }
+
+.number{
+    font-size: 35px;
+    font-weight: 800;
+    color: maroon;
+}
+.card-name{
+    color: #888;
+    font-weight: 600;
+}
+.icon-box i{
+    font-size: 25px;
+}
+
+
+/*-----charts-----*/
+
+.charts{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
+    padding: 20px;
+    padding-top: 0;
+    
+}
+.chart{
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    width: 100%;
+}
+.chart h2{
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #666;
+    text-align: center;
+}
+
+/*------responsive starts here--------*/
+
+@media (max-width:1115px) {
+    .sidebar{
+        width: 60px;
+    }
+    .main{
+        left: 60px;
+        width: calc(100% - 60px);
+    }
+}
+
+@media (max-width:800px) {
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .charts{
+        grid-template-columns: 1fr;
+    }
+  
+    #doughnut{
+        padding: 50px;
+    }
+}
+
+/*-----setting rental--------*/
+
+.content-table{
+    margin-top: 2em;
+    position: absolute;
+    top: 60px;
+    width: calc(100% - 350px);
+    margin-left: 15%;
+    min-height: calc(100vh - 100px);
+    border-collapse: collapse;
+    font-size: 14px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.content-table thead tr{
+    background-color: maroon;
+    color: #fff;
+    text-align: left;
+    justify-content: space-between;
+}
+.content-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+.content-table th,
+.content-table td{
+    padding: 12px 15px;
+}
+.content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+.content-table tbody tr:last-of-type{
+    border-bottom: 3px solid maroon;
+}
+.content-table tbody tr.active-row{
+    font-weight: 600;
+    color: maroon;
+}
+.content-table tbody tr:hover{
+    background: rgba(128, 0, 0, 0.575);
+    color: #fff;
+    border-radius: 10px;
+}
+.content-table .rent-sub{
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+.content-table i{
+    font-size: 20px;
+}
+.content-table .complete{
+    color: rgb(47, 180, 47);
+    font-weight: 500;
+}
+
+
+/*-----settings design-----*/
+.about {
+    position: absolute;
+    top: 60px;
+    width: calc(100% - 260px);
+    left: 260px;
+    min-height: calc(100vh - 60px);
+  }
+
+.setting-image{
+    top: 20px;
+  position: relative;
+  margin-left: 10%;
+  height: 400px;
+}
+.setting-charts{
+    top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
+    padding: 20px;
+}
+.setting-chart{
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 8px 10px  rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding-inline: 35px;
+    border: 2px solid #fff;
+}
+.setting-chart li a {
+    text-decoration: none;
+    font: 25px;
+    color: #000000;
+}
+.setting-chart li i{
+    margin: 10px;
+}
+.setting-chart:hover{
+    background: rgb(77, 5, 5);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.setting-chart li a:hover{
+    color: #fff;
+}
+.setting-chart li i:hover{
+    color: #fff;
+}
+.setting-chart li p:hover{
+    color: #fff;
+}
+
+
+
+/*-------vehicle section----------*/
+.vehi_head h4 {
+    position: relative;
+    top: 25px;
+    font-size: 35px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    width: 500px;
+}
+/*----*/
+.dri_head{
+    position: relative;
+    top: 60px;
+    font-size: 35px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    width: 500px;
+}
+/*----continuation vehicle management----*/
+.vehi_head button {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 8px 10px  rgba(0, 0, 0, 0.5);
+    width: 250px;
+    padding-inline: 35px;
+    border: 2px solid #fff;
+    font-size: 10px;
+    font-weight: 600;
+    color: maroon;
+    margin: 10px;
+}
+.vehi_head button:hover{
+    background: maroon;
+    color: #fff;
+    transition: all 0.5S ease;
+    cursor: pointer;
+}
+
+.add_security {
+    top: 40px;
+    padding-right: 40px;
+    float: right;
+}
+.vehi_head a span {
+    position: relative;
+    top: 20px;
+    margin: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+    width: 500px;
+}
+.vehi_head a i{
+    padding: 10px;
+}
+
+.table{
+    margin-top: 10%;
+    position: absolute;
+    width: calc(100% - 30px);
+    margin-left: 10px;
+    height: calc(100vh - 600px);
+    border-collapse: collapse;
+    font-size: 15px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.table thead{
+    background: rgb(113, 1, 1);
+    color: #fff;
+    text-align: center;
+    justify-content: space-between;
+    height: 50px;
+    font-weight: 800;
+}
+.table tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+.table th,
+.table td{
+    padding: 5px;
+    text-align: center;
+}
+.table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+.table tbody tr:last-of-type{
+    border-bottom: 3px solid maroon;
+}
+.table tbody tr.active-row{
+    font-weight: 600;
+    color: maroon;
+}
+.table tbody tr:hover{
+    background: rgba(128, 0, 0, 0.575);
+    color: #fff;
+    border-radius: 10px;
+}
+.table td i{
+    font-size: 20px;
+    align-items: center;
+    border: none;
+}
+
+/*Add Vehicle */    
+.close{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+.vehicle-container  {
+    top: 40px;
+    margin-left: 15%;
+    display: none;
+    justify-content: space-between; /* Distribute space between the containers */
+    position: relative;
+    border-radius: 20px;
+    background-color: #fff;
+    overflow: hidden;
+} 
+
+.vehicle--details {
+border-radius: 5px;
+width: 450px;
+height: auto;
+box-shadow: 1px 8px 10px rgba(0, 0, 0, 0.9);  
+margin-left: 20px;
+
+}
+
+.vehicle_head h2 {
+text-align: center;
+font-size: 25px;
+}
+
+.vehicle-form {
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 380px;
+    height: 590px;
+}
+
+.vehicle-form input {
+    top: 30px;
+    width: 400px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    text-align: left;
+    padding: 10px;
+}
+.vehicle-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    gap: 1rem;
+    padding: 10px;
+}
+.vehicle-btn  {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.vehicle-btn button {
+    margin-top: 20px;
+    margin-left: 35%;
+    width: 150px;
+    height: 40px;
+    background: rgb(150, 5, 5);
+    color: white;
+    border-radius: 20px;
+    border: 2px solid maroon;   
+    font-size: 13px;
+    font-weight: 600;
+}
+.vehicle-btn button:hover{
+    background: #161414e8;
+    border: 2px solid #161414e8;
+
+    
+}
+.vehicle-form label{
+    font-size: 13px;
+    color: #666;
+}
+
+/*------driver settings-------*/
+
+.driver-form{
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 380px;
+    height: 590px;
+}
+.driver-form input {
+    margin: 5px;
+    width: 400px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    text-align: left;
+    padding: 5px;
+}
+.driver-form label{
+    font-size: 13px;
+    color: #666;
+}
+
+/*transactions container style*/
+
+.transac-container{
+    background: #fff;
+    padding: 1rem;
+}
+.transac--wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.transac--card{
+    background: rgb(244, 240, 240);
+    border-radius: 10px;
+    padding: 1rem;
+    width: 100%;
+    height: 200px;
+    display:flex;
+    flex-direction: column;
+    box-shadow: #000000;
+}
+.transac--header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.show{
+    
+    padding-bottom: 2rem;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.button{
+    background: transparent;
+    padding: 5px;
+}
+
+.transac{
+    margin: 2.5rem;
+    color: black;
+    padding: 0.3rem;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* driver section */
+
+.menu .driver_info {
+    display: none;
+}
+
+.sidebar .menu  li:hover .driver_info{
+    display: block;
+    transition-delay: 0.02s;
+}
+
+.driver_info a{
+    font-size: 12px;
+}
+
+.reservation-container {
+    display: none;
+    justify-content: space-between; /* Distribute space between the containers */
+    position: relative;
+    border-radius: 20px;
+    background-color: transparent;
+    overflow: hidden;
+  }
+
+  .reservation-container {
+    padding-left: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 1110px;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 1px 4px 41px rgba(0,0,0,0.1);
+
+  }
+
+  .reservation-form { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    gap: 1rem;
+    padding: 10px;
+  }
+
+  .reservation-box {
+    padding-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 500px;
+    height:600px;
+    margin: 0 auto;
+    box-shadow: 5px 8px  10px 5px var(--first-shadow);
+  }
+
+  .notification-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    margin-left: 8px;
+    vertical-align: middle;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+.card-name {
+    font-size: 15px;
+}
+
