@@ -1,0 +1,252 @@
+.user--main--transaction {
+    margin-top: 70px;
+    width: auto;
+    height: auto;
+}
+.user--main--transaction--container {
+    width: 1750px;
+    height: 750px;
+    display: flex;
+    gap: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(111, 112, 112, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+.user--transaction--box--container {
+    width: 1200px;
+    height: auto;
+    box-shadow: 1px 1px 1px 1px rgba(111, 112, 112, 0.9);
+}
+.user--transaction--box--header {
+    width: 1200px;
+    height: auto;
+    box-shadow: 1px 1px 1px 1px rgba(111, 112, 112, 0.9);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user--transaction--box--header h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 400;
+}
+.user--transaction--history--box {
+    width: 1200px;
+    height: 80px;
+    box-shadow: 1px 1px 1px 1px rgba(111, 112, 112, 0.9);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.user--transaction--history--box ul{
+    gap: 10px;
+    display: flex;
+    list-style: none;
+}
+.user--transaction--history--box li {
+    margin: 40px;
+    padding: 0;
+}
+.user--transaction--history--box i {
+    padding-right: 5px;
+}
+.user--transaction--history--box a {
+    color: black;
+}
+/*user link container */
+.user--transaction--link--container {
+    width: auto;
+    height: 500px;
+    margin-top: 20px;
+    overflow: scroll;
+}
+.user--container--form {
+    width: auto;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 1px 1px 1px 1px rgba(111, 112, 112, 0.9);
+    gap: 10px; 
+}
+.user--transaction--link--border {
+    width: auto;
+    height: 150px;
+    margin-top: 10px;
+    border-radius: 30px;
+    display: flex;
+}
+
+.user--transaction--vehicle--image {
+    padding-left: 20px;
+}
+.user--transaction--vehicle--image img {
+    width: 180px;
+    height: 180px;
+    margin-top: 5px;
+}
+.user--transaction--vehicle--details {
+    margin-top: 10px;
+}
+.user--transaction--vehicle--details p {
+   padding-left: 10px;
+}
+
+.user--transaction--reservation--details {
+    margin-left: 200px;
+    padding-left: 150px;
+}
+.user--transaction--reservation--details p{
+margin-top: 10px;
+font-size: 15px;
+padding-right: 40px;
+}
+.user--transaction--reservation--details h1 {
+font-size: 20px;
+}
+.user--transaction--button {
+display: flex;
+justify-content: right;
+margin-top: 40px;
+gap: 20px;
+padding-right: 20px;
+}
+
+.user--transaction--button button {
+font-weight: 400;
+}
+/* user transaction view */
+.user--main--transaction {
+    margin-top: 70px;
+    width: auto;
+    height: auto;
+}
+.user--main--transaction--container {
+    width: 1750px;
+    height: 800px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.user--transaction--box--container {
+    width: 1200px;
+    height: auto;
+}
+.user--transaction--box--header {
+    width: 1200px;
+    height: auto;
+    box-shadow: 1px 1px 1px 1px rgba(111, 112, 112, 0.9);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user--transaction--box--header h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 400;
+}
+.user--transaction--history--box {
+    width: 1200px;
+    height: 80px;
+    box-shadow: 1px 1px 1px 1px rgba(111, 112, 112, 0.9);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.user--transaction--history--box ul{
+    gap: 10px;
+    display: flex;
+    list-style: none;
+}
+.user--transaction--history--box li {
+    margin: 40px;
+    padding: 0;
+}
+.user--transaction--history--box i {
+    padding-right: 5px;
+}
+.user--transaction--history--box a {
+    color: black;
+}
+
+
+.user--print--details {
+    width: auto;
+    height: auto;
+    box-shadow: 1px 1px 1px 1px rgba(111, 112, 112, 0.9);
+}
+.user--print--details h1 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.user--print--container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;  /* Ensures the content is spaced out evenly */
+    align-items: flex-start;  /* Aligns items to the top */
+}
+
+.user--main--view--vehicles--info, .user--main--customers--info--container {
+    width: 58%; /* Gives each container 48% width for side-by-side alignment */
+}
+
+.user--main--view--vehicle--details, .user--main--customers--form {
+    padding: 10px;
+}
+
+.user--main--view--header--vehicle h1 {
+    font-size: 20px;
+    text-align: left;
+}
+
+.user--main--total--payment {
+    margin-top: 20px;
+}
+
+.user--main--customers--form p {
+    margin: 10px;
+}
+
+.user--main--customers--form p {
+    font-size: 15px;
+}
+.user--main--customers--form span {
+    padding-left: 300px;
+}
+.user--main--customers--info--container h1 {
+    font-size: 20px;
+}
+
+.user--main--total--payment h1 {
+    font-size: 24px;
+    color: green;
+    text-align: left;
+}
+
+.bottom--details {
+    display: flex;
+    gap: 200px;
+}
+
+.download--pdf button {
+    font-weight: 400;
+    font-size: 13px;
+}
+.back--button {
+    padding-top: 8px;
+}
+.back--button button {
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.user--main--total--payment span {
+    font-size: 25px;
+    font-weight: 500;
+    color: red;
+}

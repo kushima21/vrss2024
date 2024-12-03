@@ -1,0 +1,268 @@
+ /* mode */
+ .mode{
+    display: flex;
+    align-items: center;
+    margin-right: 1%;
+  }
+  .moon-sun{
+    position: relative;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background:var(--mode-color)
+  }
+  .moon-sun :is(#moon,#sun){
+    position: absolute;
+    transition: .2s ease-in-out;
+  }
+  #sun{
+    opacity: 0;
+  }
+  body.dark #sun{
+    opacity: 1;
+  }
+  body.dark #moon{
+    opacity: 0;
+  }
+  
+  body {
+    background-color: #ffffff;
+    color: #050404;
+  }
+  
+  .darkmode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  /* Dark mode for specific elements */
+  .darkmode .topbar {
+    background-color: #222222;
+    color: #ffffff;
+  }
+  
+  .darkmode .nav-links ul li a {
+    color: #ffffff;
+  }
+  
+  .darkmode .logo i{
+    color: #b12006;
+  }
+  
+  .darkmode .logo h2 {
+    color: #b12006;
+  }
+  .darkmode .nav-links span {
+    color: #a58c88;
+  }
+
+  .darkmode h1 {
+    color: #b12006;
+  }
+
+  .darkmode .hero__text p {
+    color: white;
+  }
+
+  .darkmode  .feature__intro h2{
+    color: #b12006;
+  }
+  .darkmode  .feature__intro p {
+    color: white;
+  }
+
+  .darkmode  .feature__title {
+    color: #b12006;
+  }
+
+  .darkmode .feature__description p{
+    color: white;
+  }
+
+  /* about dark mode */
+
+  .darkmode .about--main--header h2 {
+    color: #b12006;
+  }
+  .darkmode .A-card p {
+    color: white;
+  }
+
+  .darkmode .C-2 {
+    background-color: rgb(121, 119, 119);
+  }
+
+  .darkmode .C-2 h3 {
+    color: maroon;
+  }
+
+  .darkmode .C-2 p {
+    color: rgb(245, 238, 238);
+  }
+
+  .darkmode .icons a {
+    color: rgba(145, 4, 4, 0.856);
+  }
+
+  .darkmode .description1 p {
+    color: white;
+  }
+
+
+  /* profile */
+  .darkmode .user--main--transaction----box h2 {
+    color: #b12006;
+  }
+
+  .darkmode .user--information--container span {
+    color: rgb(197, 189, 189);
+  }
+  .darkmode .user--information--container p {
+    color: wheat;
+  }
+
+  /*about*/
+  .darkmode .about-card p {
+    color: rgb(201, 181, 181);
+    padding-top: 10px;
+  }
+
+  .darkmode .profileBtn i{
+    color: gray;
+  }
+
+  .darkmode .terms--and--conditions--container span {
+    color: rgb(201, 201, 201);
+  }
+  .darkmode .terms--and--conditions--container p {
+    color: rgb(201, 201, 201);
+  }
+
+  /*profile transaction*/
+  .darkmode .user--url--main--container a {
+    color: rgb(201, 201, 201);
+  }
+
+  .darkmode .account--main--url--container a {
+    color: rgb(201, 201, 201);
+  }
+
+  .logo i {
+    color: darkred;
+  }
+
+  .profile i {
+    color: gray;
+  }
+
+  .mode i {
+    color: rgb(138, 0, 0);
+  }
+
+  .notif i {
+    font-size: 20px;
+  }
+
+  .notif {
+    padding-top: 8px;
+    margin-left: 10px;
+  }
+
+  .notification-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    margin-left: 8px;
+    vertical-align: middle;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+  }
+
+  /* invoice */
+  .darkmode .user--invoice--main--container h2 {
+    color: #b12006;
+  }
+
+  .darkmode .user--invoice--main--container p {
+    color: #e9d4d1;
+  }
+  .darkmode .user--invoice--container--header h3 {
+    color: #df2808;
+  }
+
+  .darkmode .user--invoice--customers--form--container span {
+    color: #df2808;
+  }
+
+  .darkmode .term--condition span {
+    color: #df2808;
+  }
+
+ .darkmode .total--payment h3 {
+  color: #b12006;
+  font-size: 20px;
+ }
+
+ .darkmode .user--invoice--container--box {
+  box-shadow: 2px 2px  5px 5px rgba(226, 221, 221, 0.5);
+  border: #ffffff;
+ }
+
+ .darkmode .user--invoice--container--header {
+  box-shadow: 1px 1px  2px 1px rgba(226, 221, 221, 0.5);
+  border: #ffffff;
+ }
+
+ .darkmode .user--invoice--vehicles--main--container {
+  border: #ffffff;
+ }
+
+
+ .darkmode .user--invoice--vehicles--main--container {
+  box-shadow: 0 0 5px rgba(226, 221, 221, 0.5);
+ }
+
+ .darkmode .user--invoice--customers--main--container {
+  box-shadow: 0 0 5px rgba(226, 221, 221, 0.5);
+ }
+
+ /* reservation */
+ .darkmode .user--vehicle--image--main--container {
+  box-shadow: 5px 5px  5px 5px rgba(226, 221, 221, 0.5);
+ }
+
+ .darkmode  .user--vehicle--details--main--container {
+  box-shadow: 5px 5px  5px 5px rgba(226, 221, 221, 0.5);
+ }
+
+ .darkmode  .user--vehicle--details--main--container p {
+  color: #e9d4d1;
+ }
+
+ .darkmode .user--reservation--form--container {
+  box-shadow: 5px 5px  5px 5px rgba(226, 221, 221, 0.5);
+ }
+
+ .darkmode .user--reservation--form--container h2 {
+  color: #b12006;
+ }
+
+ .darkmode .user--reservation--form--container input {
+  border: #ffffff;
+ }
+
+ .darkmode .user--reservation--form--container a {
+  color: #e9d4d1;
+ }
+ .darkmode .term--condition p {
+  color: #e9d4d1;
+ }
+
+ .darkmode .term--condition a {
+  color: #f02d0a;
+ }

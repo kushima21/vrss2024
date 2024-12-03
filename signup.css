@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+
+    background: url('image/back.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.signup--main--container {
+    display: flex;
+    flex-wrap: wrap; /* Allow elements to wrap if needed */
+    justify-content: center; /* Center content */
+    align-items: center; /* Align items vertically */
+    padding: 20px;
+}
+
+/* Image container inside the signup container */
+.signup--main--container .img-container {
+    flex: 1; /* Allow it to take equal space */
+    max-width: 50%; /* Set a maximum width for larger screens */
+}
+
+.signup--main--container--box {
+    max-width: 100%;
+    width: auto;
+    height: 50%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.img--container {
+    width: auto;
+    height: auto;
+    padding-top: 100px;
+}
+
+.img--container img {
+    width: 500px;
+    height: 600px;
+}
+
+.form--container {
+    max-width: 100%;
+    width: auto;
+    height: 700px;
+    
+}
+
+
+
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 10px;
+    color: #1f1818;
+    box-sizing: border-box;
+}
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: #100505;
+    font-size: 1.2em;
+    top: 15px;
+}
+
+.forget {
+    margin: -5px 0 15px;
+    font-size: 0.9em;
+    color: #0f0b0b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forget label input {
+    margin-right: 3px;
+}
+
+.forget label a {
+    color: #180b0b;
+    text-decoration: none;
+}
+
+.forget label a:hover {
+    text-decoration: underline;
+}
+
+button {
+    margin-top: 1em;
+    width: 100%;
+    height: 50px;
+    border-radius: 40px;
+    background: linear-gradient(black, maroon);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+}
+
+.register {
+    font-size: 0.9em;
+    color: #0f0505;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a {
+    text-decoration: none;
+    color: #670101;
+    font-weight: 600;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+}
+
+.button-sub button {
+    background-image: linear-gradient(to right, #000000, #bc0303);
+    color: white;
+}
+
+.single-input {
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 310px;
+    border-radius: 20px;
+}
+
+.single-input input {
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border: 2px solid #aaa;
+    border-radius: 10px;
+    font-size: 1em;
+    padding: 0 35px 0 10px;
+    color: #1f1818;
+    box-sizing: border-box;
+}
+
+.head h1 {
+    font-size: 30px;
+    color: #150707;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.head p {
+    font-size: 15px;
+    text-align: center;
+}
+
+.account-have {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.image {
+    width: 700px;
+    max-width: 700px;
+    height: 500px;
+}
+
+@media (max-width: 750px) {
+    .img--container {
+        display: none;
+    }
+
+    .form--container {
+        width: auto;
+        height: auto;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .head h1 {
+        font-size: 18px;
+    }
+
+    .head p {
+        font-size: 12px;
+    }
+
+    .form--container--box {
+        padding-left: 10px;
+    }
+
+    .single-input {
+        max-width: 230px;
+    }
+
+    .single-input input::placeholder {
+        font-size: 12px;
+    }
+
+    .forget {
+        font-size: 11px;
+    }
+
+    button {
+        margin-top: 1em;
+        width: 100%;
+        height: 45px;
+        border-radius: 40px;
+        background: linear-gradient(black, maroon);
+        font-size: 16px;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,500 @@
+
+.home{
+    background-image:  url('image/contact2.jpg') center/cover; 
+    padding: 7px;
+    text-align: center;
+    overflow-x: hidden;
+    height: 60vh;
+  
+  
+    }
+    
+    .home h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: rgb(181, 15, 21);
+    padding: 20px;
+    }
+    .description{
+    color: black;
+    padding: 5px;
+    font-style: italic;
+    padding-left: 40px; 
+    }
+    .description1{
+    color: black;
+    padding: 5px;
+    padding-left: 40px;
+    padding-top: -20px;
+    font-style: italic;
+    height: -10px;
+    }
+  
+    .btn,
+      .button {
+        position: relative;
+        display: inline-block;
+        padding: 0.875rem 2.1875rem;
+        background-image: linear-gradient(to right, #d11313, #bc0303);
+        border: 0;
+        border-radius: 50px;
+        cursor: pointer;
+        color: white;
+        font-weight: 400;
+        font-size: 0.875rem;
+        transition: opacity 300ms ease-in-out;
+        overflow: hidden;
+      }
+      .services_container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+        gap: 1rem;
+        margin-top: 10px;
+        padding: 20px;
+      }
+      .services_container .box{
+        padding: 10px;
+        border-radius: 1rem;
+        box-shadow: 1px 4px 41px rgba(0,0,0,0.1);
+      }
+      .services_container .box p{
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-style: italic;
+      }
+      .services_container .box h2{
+        font-size: 20px;
+      }
+      .reservation-container {
+        display: none;
+        justify-content: space-between; /* Distribute space between the containers */
+        position: relative;
+        border-radius: 20px;
+        background-color: transparent;
+        overflow: hidden;
+      }
+  
+      
+    .home{
+      background-image:  url('img/hiace2.png') center/cover; 
+      padding: 7px;
+      text-align: center;
+      overflow-x: hidden;
+      height:100%;
+  
+  
+      }
+    .home h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: rgb(181, 15, 21);
+    padding: 20px;
+    }
+  
+    .description1{
+    margin-top: 50px;
+    color: black;
+    padding: 10px;
+    font-style: italic;
+    text-align: center;
+    }
+  
+  /*---------reservation box first-------------*/
+      .reserve-container{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 490px;
+        width: 320px;
+        border-radius: 20px;
+        display: grid;
+        overflow: hidden;
+        grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+        justify-content: center;
+        margin-top: 30px;
+      }
+      .front-face, .back-face{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: var(--body-color);
+        color: var(--text-color);
+        box-shadow: 2px 8px  10px 10px rgba(0, 0, 0, 0.15);
+        backface-visibility: hidden;
+        border-radius: 20px;
+        transition: .4s linear;
+      }
+      .front-face img{
+        width: 250px;
+        height: 250px;
+      }
+      .cover-name h3{
+        font-size: 18px;
+        margin-left: 10px;
+        color: var(--text-color);
+        
+      }
+      .cover-name h1{
+        margin-top: 5px;
+        font-size: 20px;
+        margin-left: 10px;
+        font-weight: 600;
+        text-align: left;
+        color:var(--text-color);
+        text-transform: uppercase;
+      }
+      .front-face i {
+        margin-left: 10px;
+        margin: 10px;
+        color: var(--text-color2);
+      }
+    
+      
+      .back-face h2{
+        margin-top: 25px;
+        margin-left: 8%;
+        font-weight: 800;
+        color: var(--text-color2);
+        text-transform: uppercase;
+      }
+      .back-face h3{
+        font-size: 18px;
+        padding: 10px;
+      }
+      .back-face{
+        transform: perspective(800px) rotateY(-180deg);
+      }
+      .front-face{
+        transform: perspective(800px) rotateY(0deg);
+      }
+      .reserve-container:hover> .back-face{
+        transform: perspective(800px) rotateY(0deg);
+        border: 2px solid #0000;
+      }
+      .reserve-container:hover .front-face{
+        transform: perspective(800px) rotateY(180deg);
+        border: 2px solid #0000;
+      }
+  
+      .services_details {
+        padding-left: 5px;
+      }
+  
+     
+  
+      .services_details .reserveBtn {
+          position: relative;
+          display: inline-block;
+          align-items: center;
+          padding: 0.875rem 2.1875rem;
+          background: linear-gradient(black, maroon);
+          box-shadow: 1px 8px 10px rgba(0, 0, 0, 0.5);
+          border: 2px solid maroon;
+          border-radius: 10px;
+          cursor: pointer;
+          color: white;
+          font-weight: 600;
+          font-size: 0.875rem;
+          transition: opacity 300ms ease-in-out;
+          overflow: hidden; 
+          justify-content: center;
+          margin-top: 15px;
+          margin-left: 25%;
+          
+      }
+      .services_details .detailsBtn {
+        margin-top: 20px;
+        position: relative;
+        display: inline-block;
+        padding: 0.875rem 2.1875rem;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        cursor: pointer;
+        color: var(--text-color);
+        font-weight: 600;
+        font-size: 0.875rem;
+        transition: opacity 300ms ease-in-out;
+        box-shadow: 1px 8px 10px  rgba(0, 0, 0, 0.5);
+        overflow: hidden; 
+        background:transparent;
+        margin-left: 25%;
+      }
+      
+  
+  
+      /*reservation container */
+     
+  
+      .reservation-container {
+        padding-left: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        width: 1110px;
+        height: auto;
+        margin: 0 auto;
+        box-shadow: 1px 4px 41px rgba(0,0,0,0.1);
+    
+      }
+  
+      .reservation-form { 
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+        gap: 1rem;
+        padding: 10px;
+
+      }
+  
+      .reservation-box {
+        padding-left: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        width: 500px;
+        height:600px;
+        box-shadow: 5px 8px  10px 5px var(--first-shadow);
+      }
+      .reservation-box h5{
+        font-size: 15px;
+        font-weight: 400;
+        padding-top: 15px;
+      }
+      .reservation-box .total{
+        font-size: 15px;
+        font-weight: 600;
+        padding-top: 20px;
+      }
+      .reservation-box h2 {
+        padding-top: 10px;
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+        color: rgb(114, 3, 3);
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+      .reservation-box p {
+        font-size: 20px;
+        color:var(--text-color);
+      }
+  
+      .reservation-details form {
+        display:flex ;
+        flex-direction: column;
+      }
+      
+      .reservation-details label {
+        font-size: 15px;
+        color: var(--text-color);
+        margin: 10px;
+      }
+  
+      .reservation-details form select {
+        width: 600px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+  
+      .reservation-details input {
+        width: 480px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .car-details2 h2{
+        font-size: 25px;
+        color: var(--text-color);
+        text-align: left;
+        margin: 5px 0;
+        margin-bottom: 10px;
+        margin-left: 10px;
+      }
+      .car-details2 h3{
+        font-size: 16px;
+        color: var(--text-color);
+        text-align: left;
+        font-weight: 400;
+        margin: 5px 0;
+        padding: 10px;
+    
+      }
+  
+  
+      .car-details p {
+        font-size: 13px;
+        text-align: justify;
+      }
+      .car-details a {
+        color: red;
+      }
+      .car-details input {
+        font-size: 20px;
+        font-weight: 600;
+        border: none;
+        margin-left: 10px;
+      }
+     
+      .car-details span{
+        color: rgb(121, 5, 5);
+      }
+      .close {
+        cursor: pointer;
+      }
+  
+    .submit-button {
+      width: 540px;
+      padding-left: 20px;
+      display: flex ;
+      justify-content: center;
+      align-items: center;
+      margin-top: -3%;
+    }
+  
+    .submit-button a {
+      text-align: center;
+      width: 100px;
+      margin-left: 10%;
+      font-size: 15px;
+    }
+  
+    .popup {
+      width: 600px;
+      height: 72%;
+      background: #ac2020;
+      border-radius: 6px;
+      position: absolute;
+      top: 120px;
+      left: 30%;
+      text-align: center;
+      visibility: hidden;
+    }
+  
+    .open-popup {
+      visibility:   visible;
+    }
+  
+    .popup img {
+      width: 100px;
+      margin-top: -50px;
+      
+    }
+  
+    .popup h2 {
+      font-size: 38px;
+      font-weight: 500;
+    
+    }
+  
+    .popup button {
+      width: 200px;
+      cursor: pointer;
+    }
+  
+    /* Media Queries for further responsiveness */
+@media (max-width: 500px) {
+    .home h1 {
+        font-size: 1.5rem; /* Smaller heading for mobile */
+    }
+    
+    .description,
+    .description1,
+    .services_container .box p,
+    .services_container .box h2 {
+        font-size: 1rem; /* Smaller text for mobile */
+    }
+
+    .btn,
+    .button,
+    .services_details .reserveBtn,
+    .services_details .detailsBtn { /* Smaller button padding for mobile */
+        font-size: 0.75rem; /* Smaller font for mobile */
+    }
+
+    .reservation-container,
+    .reservation-box {
+        width: 50%; /* More width for small screens */
+        height: 10px;
+    }
+}
+
+@media (max-width: 550px) {
+    .reservation-box {
+        height: 10px;
+    }
+}
+
+@media (max-width: 380px) {
+    .home {
+        height: 50vh; /* Smaller height for very small screens */
+    }
+
+    .home h1 {
+        font-size: 1.2rem; /* Even smaller heading */
+    }
+
+    .popup h2 {
+        font-size: 1.5rem; /* Smaller popup heading */
+    }
+}
+
+@media (max-width: 600px) {
+    .reserve-container {
+        max-width: 280px; /* Reduce max width for tablets */ 
+        max-height: 380px;
+    }
+
+    .services_container {
+      padding-top: 100px;
+    }
+    .reserve-container h3{
+        font-size: 10px;
+    }
+    .reserve-container h1{
+        font-size: 10px;
+    }
+    .front-face img {
+        width: 50%; /* Ensure image is responsive */
+    }
+}
+
+@media (max-width: 480px) {
+    .reserve-container {
+        margin-top: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .front-face img {
+        width: 50%;
+        height: 100px; /* Ensure image is responsive */
+    }
+    
+}
+
+@media  (max-width: 500px){
+    .description1 p{
+        font-size: 10px;
+    }
+    .description1 {
+        width: 80%;
+        text-align: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 500px){
+    .footer_copyrigth {
+        width: 80%;
+        font-size: 10px;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        padding-left: 50px;
+    }
+}
+@media (max-width: 500px) {
+    .services_container {
+        justify-content: center;
+        align-items: center;
+        margin-right: 100px;
+    }
+}

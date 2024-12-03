@@ -1,0 +1,205 @@
+
+.home{
+    background-image:  url('image/contact2.jpg') center/cover; 
+    padding: 7px;
+    text-align: center;
+    overflow-x: hidden;
+    height: 60vh;
+  
+  
+    }
+    .home h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: rgb(181, 15, 21);
+    padding: 20px;
+    }
+    .description{
+    color: black;
+    padding: 5px;
+    font-style: italic;
+    padding-left: 40px;
+    padding-top: 20px;  
+    }
+    .description1{
+    color: black;
+    padding: 5px;
+    padding-left: 40px;
+    padding-top: -20px;
+    font-style: italic;
+    height: -10px;
+    }
+  
+    .btn,
+      .button {
+        position: relative;
+        display: inline-block;
+        padding: 0.875rem 2.1875rem;
+        background-image: linear-gradient(to right, #d11313, #bc0303);
+        border: 0;
+        border-radius: 50px;
+        cursor: pointer;
+        color: white;
+        font-weight: 400;
+        font-size: 0.875rem;
+        transition: opacity 300ms ease-in-out;
+        overflow: hidden;
+      }
+      .services_container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+        gap: 1rem;
+        margin-top: 10px;
+        padding: 20px;
+      }
+      .services_container .box{
+        padding: 10px;
+        border-radius: 1rem;
+        box-shadow: 1px 4px 41px rgba(0,0,0,0.1);
+      }
+      .services_container .box p{
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-style: italic;
+      }
+      .services_container .box h2{
+        font-size: 20px;
+      }
+      .reservation-container {
+        display: none;
+        justify-content: space-between; /* Distribute space between the containers */
+        position: relative;
+        border-radius: 20px;
+        background-color: transparent;
+        overflow: hidden;
+      }
+  
+      
+    .home{
+      background-image:  url('img/hiace2.png') center/cover; 
+      padding: 7px;
+      text-align: center;
+      overflow-x: hidden;
+      height:100%;
+  
+  
+      }
+    .home h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: rgb(181, 15, 21);
+    padding: 20px;
+    }
+  
+    .description1{
+    margin-top: 50px;
+    color: black;
+    padding: 10px;
+    font-style: italic;
+    text-align: center;
+    }
+  
+
+
+.section-header h1{
+    position: relative;
+    top: 100px;
+    font-size: 40px;
+    padding-left: 20px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-color2);
+  }
+
+  .section
+  {
+    top: 60px;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 2.5em;
+  }
+  .row{
+    margin-top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .column{
+    width: 90%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+  }
+  .card{
+    width: 100%;
+    height: 100%;
+    padding: 2em 1.5em;
+    border-radius: 20px;
+    background: linear-gradient(#ffff 50%, maroon 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+.card h3{
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-color);
+  margin: 1em 0;
+  align-content: center;
+}
+p{
+  color:var(--text-color);
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+.icon-wrapper{
+  background-color:maroon;
+  position: relative;
+  margin-bottom: 0.5em;
+  font-size: 30px;
+  width:2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  color:#ffffff;
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+  
+}
+.card:hover{
+  background-position: 0 100%;
+}
+.card:hover .icon-wrapper{
+  background-color: #ffffff;
+  color: maroon;
+}
+.card:hover h3{
+  color: #ffffff;
+}
+.card:hover p{
+  color: #f0f0f0;
+}
+
+@media screen and (min-width:768px) {
+  section{
+    padding: 0 2em;
+  }
+  .column{
+    flex: 0 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width:992px){
+  section{
+    padding: 1em 3em;
+  }
+  .column{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+  

@@ -1,0 +1,275 @@
+.user--reservation--main--container {
+  width: auto;
+  height: auto;
+  padding-top: 50px;
+  padding-left: 10px;
+}
+
+.user--reservation--main--box {
+  padding-top: 50px;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap; /* Ensures elements wrap to the next line when needed */
+  gap: 1px; /* Adds spacing between wrapped elements */
+  justify-content: center; /* Centers the elements when wrapped */
+  align-items: flex-start; /* Aligns elements at the top */
+}
+
+.user--vehicle--main--container {
+  flex: 1; /* Allows this container to grow and shrink proportionally */
+  min-width: 300px; /* Sets a minimum width to prevent it from shrinking too much */
+  max-width: 1000px; /* Prevents it from growing too large */
+  height: 600px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Centers the container on the page */
+  display: flex;
+}
+
+.user--vehicle--image--main--container {
+  width: 550px;
+  height: 600px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main--image img {
+  width: 500px;
+  height: 400px;
+}
+
+.vehicle--other {
+  display: flex;
+}
+
+.reservation-vehicle-other img {
+  width: 180px;
+  height: 150px;
+}
+/* vehicles--description--head */
+.user--vehicle--details--main--container {
+  width: 450px;
+  height: 600px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.vehicles--description--head h1 {
+  font-size: 28px;
+  font-weight: 450;
+  padding-top: 10px;
+}
+
+.vehicles--container--description p {
+  font-size: 14px;
+  margin: 40px;
+}
+/* use reservation form container */
+.user--reservation--form--container {
+  flex: 1; /* Allows this container to grow and shrink proportionally */
+  min-width: 300px; /* Sets a minimum width */
+  max-width: 700px; /* Prevents it from growing too large */
+  height: 650px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Centers the container on the page */
+}
+.user--reservation--form--container h2 {
+  text-align: center;
+}
+
+.reservation--header h2 {
+  font-size: 30px;
+}
+
+.reservation--form--container {
+  padding-left: 20px;
+}
+.reservation--form--container input {
+  width: 350px;
+  height: 33px;
+  border-radius: 10px;
+}
+
+/* submit--container */
+.submit--container {
+  display: flex;
+  padding-left: 30px;
+}
+.submit--container h2 {
+  font-size: 20px;
+  padding-top: 10px;
+}
+.submit--container button {
+  font-weight: 400;
+  font-size: 12px;
+}
+.term--condition {
+  text-align: center;
+}
+
+.term--condition p {
+  font-size: 12px;
+}
+.term--condition a {
+  color: red;
+}
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .user--reservation--main--box {
+    flex-direction: column; /* Stacks elements vertically */
+    gap: 10px; /* Adjust spacing for smaller screens */
+  }
+
+  .user--vehicle--main--container,
+  .user--reservation--form--container {
+    width: 90%; /* Occupies most of the screen width while leaving some margin */
+    height: auto; /* Adjusts height dynamically to content */
+  }
+}
+
+@media (max-width: 768px) {
+  .user--vehicle--main--container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+  }
+
+  .user--vehicle--image--main--container,
+  .user--vehicle--details--main--container {
+    width: 100%; /* Make containers take full width */
+    max-width: 550px; /* Optional: Limit maximum width */
+    height: auto; /* Allow height to adjust based on content */
+  }
+}
+@media (max-width: 768px) {
+  .main--image img {
+    width: 300px; /* Resize main image for smaller screens */
+    height: auto; /* Adjust height automatically */
+  }
+
+  .reservation-vehicle-other img {
+    width: 130px; /* Resize smaller images */
+    height: auto; /* Adjust height automatically */
+  }
+
+  .vehicle--other {
+    justify-content: center; /* Optional: Centers images on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .main--image {
+    padding-left: 70px;
+  }
+  .main--image img {
+    width: 200px; /* Further resize for very small screens */
+    height: auto;
+  }
+
+  .reservation-vehicle-other img {
+    width: 100px; /* Further resize smaller images */
+    height: auto;
+  }
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .user--vehicle--details--main--container {
+    width: 350px; /* Shrinks container for smaller screens */
+    height: auto; /* Adjusts height based on content */
+  }
+
+  .vehicles--description--head h1 {
+    font-size: 22px; /* Reduces header font size */
+  }
+
+  .vehicles--container--description p {
+    font-size: 12px; /* Reduces paragraph font size */
+    margin: 16px 0; /* Adjusts margin for smaller space */
+  }
+}
+
+@media (max-width: 480px) {
+  .user--vehicle--details--main--container {
+    width: 100%; /* Makes the container fit the screen width */
+    height: auto;
+  }
+
+  .vehicles--description--head h1 {
+    font-size: 18px; /* Further reduces header font size */
+  }
+
+  .vehicles--container--description p {
+    font-size: 10px; /* Further reduces paragraph font size */
+    margin: 10px 0; /* Compact margin for smaller screens */
+  }
+}
+
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .user--reservation--form--container {
+    max-width: 500px; /* Shrinks container for smaller screens */
+    height: auto; /* Adjusts height based on content */
+  }
+
+  .reservation--header h2 {
+    font-size: 24px; /* Reduces header font size */
+  }
+
+  .reservation--form--container input {
+    max-width: 100%; /* Ensures input fields fit smaller screens */
+    height: 30px; /* Adjusts height */
+  }
+
+  .submit--container {
+    padding-left: 0; /* Removes excess padding */
+    justify-content: center; /* Centers elements for smaller screens */
+  }
+
+  .submit--container h2 {
+    font-size: 16px; /* Reduces text size */
+  }
+
+  .submit--container button {
+    font-size: 10px; /* Reduces button text size */
+  }
+}
+
+@media (max-width: 480px) {
+  .user--reservation--form--container {
+    width: 100%; /* Makes container fit screen width */
+    height: auto;
+  }
+
+  .reservation--header h2 {
+    font-size: 20px; /* Further reduces header size */
+  }
+
+  .reservation--form--container input {
+    height: 28px; /* Further reduces input height */
+    width: 250px;
+  }
+
+  .submit--container h2 {
+    font-size: 10px; /* Further reduces text size */
+    padding-left: 10px;
+    color: rgb(148, 1, 1);
+    font-weight: 500;
+  }
+
+  .submit--container button {
+    font-size: 8px; /* Further reduces button text size */
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .term--condition {
+    width: fit-content;
+  }
+  .term--condition p {
+    font-size: 8px;
+    color: black;
+    font-weight: 400;
+  }
+  .term--condition a {
+    color: red;
+  }
+}

@@ -1,0 +1,114 @@
+    .user--search--container {
+        width: auto;
+        height: auto;
+    }
+
+    .user--search--box--container {
+        width: auto;
+        max-height: auto;
+        padding-bottom: 40px;
+    }
+
+    .user--search--vehicle--form {
+        display: flex;
+        width: auto;
+        height: auto;
+        padding-top: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* user--search--vehicle--form */
+    .user--search--vehicle--container {
+        padding-top: 100px;
+        display: flex;
+    }
+    .user--search--vehicle--container i{
+        font-size: 30px;
+        padding-right: 5px;
+    }
+    .user--search--vehicle--container input {
+        width: 480px;
+        height: 50px;
+    }
+    .user--search--vehicle--container button {
+        font-weight: 400;
+    }
+    /* user--search--suggestion--header */
+    .user--search--suggestion--header {
+        padding-top: 30px;
+    }
+    .user--search--suggestion--header h1{
+        justify-content: left;
+        display: flex;
+        font-size: 25px;
+        padding-left: 110px;
+        font-weight: 600;
+    }
+
+    .center-message {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 18px;
+        color: #333;
+    }
+
+    /* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .user--search--vehicle--form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .user--search--vehicle--container {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        max-width: fit-content;
+    }
+
+    .user--search--vehicle--container input {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 10px;
+    }
+
+    .user--search--vehicle--container button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .user--search--suggestion--header h1 {
+        font-size: 22px;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .user--search--vehicle--container input {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 10px;
+    }
+
+    .user--search--vehicle--container button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .user--search--suggestion--header h1 {
+        font-size: 18px;
+        padding-left: 0;
+    }
+
+    .center-message {
+        font-size: 16px;
+    }
+}
+
+.footer_copyrigth {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
